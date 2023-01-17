@@ -17,11 +17,11 @@ class UserController extends Controller {
 			], 401);
 		}
 
-		Authorizator::claim('READ_USER');
+		// Authorizator::claim('READ_USER');
 
 		$result = SQLayer::run(
 			'SELECT SN, Username, FirstName, LastName, DateRegistered, Deactivated, CreatorUserSN FROM User WHERE CreatorUserSN = ?',
-			[Session::get('UserSN')]
+			[Session::get('SN')]
 		)->fetch();
 
 		return new Response($result, 200);
