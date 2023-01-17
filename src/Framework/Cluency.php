@@ -18,7 +18,7 @@ class Cluency {
 		def('PORTAL_DIR', dirname($_SERVER['SCRIPT_FILENAME']));
 		def('PROJECT_DIR', dirname(PORTAL_DIR, $levels - 1));
 
-		Utility\Envelope::load(PROJECT_DIR . '/.env');
+		// Utility\Envelope::load(PROJECT_DIR . '/.env');
 
 		self::transfer();
 	}
