@@ -56,7 +56,9 @@ class Router extends Singleton {
 		echo var_dump($this);
 
 		foreach ($this->routes as $route) {
-			if (($matches = $route->match()) === false) {
+			echo var_dump($matches = $route->match());
+
+			if ($matches === false) {
 				continue;
 			}
 
