@@ -42,8 +42,6 @@ class Route implements RouteInterface {
 	}
 
 	public function match($method = REQUEST_METHOD, $path = REQUEST_PATH) {
-		echo var_dump($path);
-
 		$dest = str_replace('%2F', '/', rawurlencode($this->destination));
 		$pattern = preg_replace('#([^/]*)%7B(\w+)%7D([^/]*)#', '(?P<$2>$1[^/]+$3)', $dest);
 		$method = !defined("self::$method") ?: constant("self::$method");
