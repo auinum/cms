@@ -53,10 +53,8 @@ class Router extends Singleton {
 	 * @return void
 	 */
 	protected function deliver() {
-		echo var_dump($this);
-
 		foreach ($this->routes as $route) {
-			echo var_dump($matches = $route->match());
+			$matches = $route->match();
 
 			if ($matches === false) {
 				continue;
