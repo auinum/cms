@@ -1,0 +1,19 @@
+{
+	"name": "subcursor/cluency",
+	"description": "A modular framework.",
+	"license": "Apache",
+	"autoload": {
+		"psr-4": {
+			"App\\": "App",
+			"Cluency\\": "src\\Framework",
+			"Nutshell\\": "src\\Shell"
+		}
+	},
+	"authors": [
+		{
+			"name": "Subcursor",
+			"email": "subcursor@hotmail.com"
+		}
+	],
+	"require": {}
+}

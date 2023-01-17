@@ -1,0 +1,11 @@
+{
+	"editor.fontFamily": "'Fantasque Sans Mono', 'monospace'",
+	"editor.insertSpaces": false,
+	"files.associations": {
+		"example.env": "env"
+	},
+	"php.problems.exclude": {
+		"/App/": [1413],
+		"/src/": [1413]
+	}
+}

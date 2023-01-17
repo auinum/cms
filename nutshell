@@ -1,0 +1,4 @@
+<?php
+require_once __DIR__ . '/vendor/autoload.php';
+
+exec("php -S localhost:52300 -t www -d display_errors=On -d variables_order=EGPCS");
